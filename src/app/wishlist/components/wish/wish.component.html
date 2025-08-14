@@ -1,0 +1,32 @@
+<div class="parent">
+  <app-header></app-header>
+
+  <div class="full" *ngIf="wishItems.length > 0; else emptyWish">
+
+
+  <div class="item" *ngFor="let item of wishItems" >
+    <button (click)="deleteWishItem(item._id)"> 🗑️ Delete</button>
+    
+    <!-- صورة المنتج -->
+    <img [src]="item.imageCover" alt="Product Image" width="20%" height="10%" class="rounded" />
+
+    <!-- بيانات المنتج -->
+    <div class="item-details">
+      <h5>{{ item.title }}</h5>
+      <p>price : {{ item.price }} L.E</p>
+      <p>count : {{ item.count }}</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- لو السلة فاضية -->
+<ng-template #emptyWish>
+  <div class="free">
+    <h4>Your Wish is empty</h4>
+  </div>
+</ng-template>
+
+
+  <app-footer></app-footer>
+</div>

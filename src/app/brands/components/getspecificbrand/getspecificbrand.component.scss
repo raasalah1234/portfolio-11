@@ -1,0 +1,27 @@
+
+
+.brand-card {
+    width: 40%;
+    height : auto;
+    margin: 8% 25%;
+    text-align: center;
+    border: 1px solid coral;
+    border-radius: 20px;
+    display: inline-block;
+    color: coral;
+    padding: 10px;
+    transition: transform 0.3s , text-shadow 0.3s #ddd  ;
+}
+
+
+.brand-card:hover{
+    transform: rotate(10deg);
+}
+.all {
+    background-image: linear-gradient(to right,rgba(212, 136, 5, 0.833),white);
+    width: 100%;
+}
+
+
+
+

@@ -1,0 +1,66 @@
+footer {
+    background-color: #ffffff;
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+footer .map-link {
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+footer .map-link .map {
+    width: 70%;
+    border-radius: 10px;
+
+}
+footer .map-link .link {
+    width: 40%;
+    display: flex;
+
+}
+
+footer .map-link .link ul {
+    list-style: none;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer .map-link .link ul li {
+    margin: 10px;
+}
+.visa {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.first {
+      display: flex;
+  gap: 15px;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+.second {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.second img {
+  height: 40px;
+  transition: transform 0.3s;
+}
+.second img:hover {
+  transform: scale(1.05);
+}
+.link ul li {
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.link ul li:hover {
+    color: coral;
+}

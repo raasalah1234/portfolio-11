@@ -1,0 +1,11 @@
+<div class="parent">
+  <app-header></app-header>
+
+  <div class="card" *ngFor="let item of allusers">
+    <h5>{{ item.name }}</h5>
+    <h5>{{ item.email }}</h5>
+    <h5>{{ item.createdAt }}</h5>
+  </div>
+
+  <app-footer></app-footer>
+</div>

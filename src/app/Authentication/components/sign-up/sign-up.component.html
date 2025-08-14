@@ -1,0 +1,33 @@
+<div class="parent">
+  <div>
+  <app-header></app-header>
+</div>
+<form (ngSubmit)="submitSignup()">
+  <h1>Welcome</h1>
+  
+  <input type="text" placeholder="Name" [(ngModel)]="user.name" name="name" required>
+  
+  <input type="email" placeholder="Email" [(ngModel)]="user.email" name="email" required>
+  
+  <input type="password" placeholder="Password" [(ngModel)]="user.password" name="password" autocomplete="new-password" required>
+<p style="color:red" *ngIf="passworderror">{{ passworderror }}</p>
+ 
+  <input type="password" placeholder="Re-enter Password" [(ngModel)]="user.rePassword" name="repassword" required>
+<p style="color:red" *ngIf="repassworderror">{{ repassworderror }}</p>
+
+  <input type="text" placeholder="Phone" [(ngModel)]="user.phone" name="phone" required>
+
+  <button type="submit">Signup</button>
+
+  <div>
+    <span>Are you already have an account?</span>
+    <button routerLink="/signin" type="button" id="SignIn">SignIn</button>
+  </div>
+</form>
+
+
+<div>
+  <app-footer></app-footer>
+</div>
+
+</div>

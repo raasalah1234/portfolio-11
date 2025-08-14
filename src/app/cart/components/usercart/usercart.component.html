@@ -1,0 +1,47 @@
+<div class="parent">
+  <app-header></app-header>
+
+  <div class="full" *ngIf="cartItems.length > 0; else emptyCart">
+    
+    
+    <div class="item" *ngFor="let item of cartItems"  >
+    <button  (click)="removeItem(item.product._id)">Delete</button>
+    
+    <!-- صورة المنتج -->
+    <img [src]="item.product.imageCover" alt="Product Image" width="20%" height="8%" class="rounded" />
+    
+    <!-- بيانات المنتج -->
+    <div class="item-details">
+      <h5>{{ item.product.title }}</h5>
+      <p>price : {{ item.price }} L.E</p>
+      <!-- <p>count : {{ item.count }}</p> -->
+  <label>Count:</label>
+<input 
+  type="number" 
+  min="1"
+  [(ngModel)]="item.count" 
+  (ngModelChange)="updateQuantity(item.product._id, item.count)"
+>
+
+</div>
+
+    
+    
+    
+  </div>
+    <div class="choose">
+    <button  routerLink="/addaddress">Add My Address</button>
+<button (click)="removeAllCart()">🗑️ Delete All Cart</button>
+  </div>
+</div>
+
+
+<!-- لو السلة فاضية -->
+<ng-template #emptyCart>
+  <div class="free">
+    <h4>Your cart is empty</h4>
+  </div>
+</ng-template>
+
+<app-footer></app-footer>
+</div>

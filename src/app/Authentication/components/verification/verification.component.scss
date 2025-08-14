@@ -1,0 +1,44 @@
+.parent {
+    background-image: linear-gradient(to right,rgba(212, 136, 5, 0.833),white);
+
+}
+form {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    border-radius: 0 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    border: 1px solid orange;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
+}
+input {
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+
+}
+button {
+    color: orange;
+    background-color: #ffffff;
+    border: none;
+    padding: 7px 50px;
+    border-radius: 10px;
+    transition: transform 0.3s , background-color 0.3s;
+    font-size: 20px;
+}
+button:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    background-color: orange;
+}
+input:focus {
+    border: 2px solid orange
+}

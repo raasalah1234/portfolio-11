@@ -1,0 +1,20 @@
+{
+  "routes": [
+    "/addaddress",
+    "/allbrands",
+    "/allproducts",
+    "/allsub",
+    "/allusers",
+    "/cart",
+    "/cash",
+    "/categories",
+    "/forgotpassword",
+    "/resetpassword",
+    "/signin",
+    "/signup",
+    "/update",
+    "/updatecurrentpassword",
+    "/verify-code",
+    "/wish"
+  ]
+}

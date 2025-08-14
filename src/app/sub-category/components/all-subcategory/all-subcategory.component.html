@@ -1,0 +1,26 @@
+<!-- <div class="sidebar">
+    
+    <h5>Suggested SubCategories</h5>
+    
+    <ul>
+        <li *ngFor="let item of allsub" class="child">
+            {{item.name}}
+        </li>
+    </ul>
+    <button (click)="showMore()">ShowMore</button>
+    
+</div> -->
+
+<div class="sidebar">
+  <h5>Suggested SubCategories</h5>
+
+  <ul>
+    <li *ngFor="let item of visibleSubcategories" [routerLink]="['/subdetails',item._id]" class="child">
+      {{ item.name }}
+    </li>
+  </ul>
+
+  <button (click)="showMore()">
+    {{ showAll ? 'Show Less' : 'Show More' }}
+  </button>
+</div>

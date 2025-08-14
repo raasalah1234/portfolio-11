@@ -1,0 +1,44 @@
+<div class="parent">
+
+  <div>
+    <app-header></app-header>
+  </div>
+  
+  
+  <form (ngSubmit)="submitSignIn()">
+    <h1>Welcome Again</h1>
+    <input type="email" name="email" placeholder="email" [(ngModel)]="user.email" >
+    <input type="password" name="password" placeholder="password" [(ngModel)]="user.password" autocomplete="new-password">
+    
+    
+    
+    <div>
+      <span routerLink="/forgotpassword"   type="submit">Are you forget your password?</span>
+    </div>
+    
+    <button type="submit" >SignIn</button>
+    
+    <div>
+      <span id="span2">Do you not have an account already?</span>
+      <button routerLink="/signup" type="submit" >SignUp</button>
+      
+    </div>
+    
+    
+    
+  </form>
+  
+  <div>
+    <app-footer></app-footer>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+

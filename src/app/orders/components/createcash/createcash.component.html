@@ -1,0 +1,15 @@
+<div class="parent">
+  <app-header></app-header>
+  <form (ngSubmit)="createOrder()" >
+  <input type="tetxt" placeholder="HomeDetails" [(ngModel)]="details" name="HomeDetails" >
+  <input type="text" placeholder="Phone" [(ngModel)]="phone" name="phone" >
+  <input type="text" placeholder="city" [(ngModel)]="city" name="city" >
+
+<button type="submit">submit</button>
+
+  
+  
+</form>
+
+<app-footer></app-footer>
+</div>

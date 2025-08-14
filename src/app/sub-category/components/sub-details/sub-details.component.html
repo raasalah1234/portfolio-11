@@ -1,0 +1,7 @@
+<div class="subcategory-details" *ngIf="sub">
+  <h2>{{ sub.name }}</h2>
+  <p><strong>Slug:</strong> {{ sub.slug }}</p>
+  <p><strong>Category ID:</strong> {{ sub.category }}</p>
+  <p><strong>Created At:</strong> {{ sub.createdAt | date:'medium' }}</p>
+  <p><strong>Updated At:</strong> {{ sub.updatedAt | date:'medium' }}</p>
+</div>

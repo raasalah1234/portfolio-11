@@ -1,0 +1,123 @@
+<!-- <app-slider></app-slider>
+<div  class="box mt-5">
+   <div class="w-25">
+        <label for="categories">Categories</label>
+        <select  id="categories" class="form-control" [(ngModel)]="selectedCategory"  (change)="filterByCategory()">
+            <option value="">All Products</option>
+            <option *ngFor="let category of categories"  value={{category._id}} >{{category.name}}</option>
+        </select>
+        <app-all-subcategory></app-all-subcategory>
+
+    </div>
+    <div  id="parent" class="row" >
+        @for(item of products ; track $index){
+        <div class="col-md-3 col-sm-12">
+            <div class="item" [routerLink]="['/details' , item._id]">
+                <img src={{item.imageCover}} alt="">
+                <div class="body">
+                    <h4>{{item.title}}</h4>
+                    <button class="border form-control w-25 text-center"  (click)="addToWish(item._id)"><i class="fa-regular fa-heart"></i></button>
+                    <p>{{item.description}}</p>
+                </div>
+                <div class="px-3 mb-2 d-flex justify-content-between align-items-center">
+                    <button class="btn btn-success" (click)="addToCart(item._id)">Add To Cart</button>
+                    <span>{{item.price}} L.E</span>
+                </div>
+            </div>
+        </div>
+    }
+    </div>
+    <div class="text-center w-100" *ngIf="">
+        <app-spiner></app-spiner>
+        </div>
+    </div>
+    -->
+<!-- 
+    <app-slider></app-slider>
+
+<div  class="container">
+    <div>
+      <label for="categories">Categories</label>
+      <select id="categories" class="form-control w-25"  [(ngModel)]="selectedCategory" (change)="filterByCategory()">
+        <option value="">All Products</option>
+        <option *ngFor="let category of categories" value={{category._id}}>{{ category.name }}</option>
+      </select>
+    </div>
+
+  <div class="all">
+   
+    <div class="sidebar">
+      <app-all-subcategory></app-all-subcategory>
+    </div>
+
+     Products Area -->
+      <!-- <div class="products" >
+        @for(item of products ; track $index){
+            <div class="item" [routerLink]="['/details', item._id]">
+              <img [src]="item.imageCover"  alt="Product">
+              <div class="card-body">
+                <h5 class="card-title">{{ item.title }}</h5>
+                <p class="card-text">{{ item.description }}</p>
+              </div>
+              <div >
+                <button class="btn btn-success" (click)="addToCart(item._id)">Add To Cart</button>
+                <span>{{ item.price }} L.E</span>
+              </div>
+            </div>
+        } -->
+     
+ 
+ 
+  
+        <!-- <div class="text-center w-100" *ngIf="loading">
+          <app-spiner></app-spiner>
+        </div> -->
+
+
+<div class="home">
+  <div>
+    <app-header></app-header>
+ </div>
+
+ <div>
+  <app-slider></app-slider>
+ </div>
+
+ <div  class="box mt-5">
+   <div class="w-25">
+        <label for="categories">Categories</label>
+        <select  id="categories" class="form-control" [(ngModel)]="selectedCategory"  (change)="filterByCategory()">
+            <option value="">All Products</option>
+            <option *ngFor="let category of categories"  value={{category._id}} >{{category.name}}</option>
+        </select>
+
+    </div>
+
+ <div class="products">
+  @for (item of products; track $index) {
+    <div class="item" [routerLink]="['/details',item._id]">
+      <button class="wish"><i class="fa-regular fa-heart"></i></button>
+
+      <img src="{{item.imageCover}}" alt="Product">
+      <div class="card">
+        <h6>{{item.title}}</h6>
+        <P>{{item.description}}</P>
+      </div>
+        <div class="buy">
+                <button><i class="fa-solid fa-cart-shopping"></i></button>
+                <span>{{ item.price }} L.E</span>
+        </div>
+
+    </div>
+  }
+ </div>
+
+ <div>
+  <app-all-subcategory></app-all-subcategory>
+ </div>
+
+
+ <div>
+  <app-footer></app-footer>
+ </div>
+</div>

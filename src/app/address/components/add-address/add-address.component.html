@@ -1,0 +1,62 @@
+<div class="parent">
+  <app-header></app-header>
+
+  <form (ngSubmit)="addAddress()" >
+  <input type="text" placeholder="Home" [(ngModel)]="home" name="Home" >
+  <input type="tetxt" placeholder="HomeDetails" [(ngModel)]="homeDetails" name="HomeDetails" >
+  <input type="text" placeholder="Phone" [(ngModel)]="phone" name="phone" >
+  <input type="text" placeholder="city" [(ngModel)]="city" name="city" >
+
+<button type="submit" >
+  {{ isFirstSubmit ? 'Submit' : '➕ Add Another Address' }}
+</button>
+
+  
+  
+</form>
+
+<!-- <button class="btn btn-primary mt-3" (click)="deleteAddress()" >Delete</button> -->
+
+<!--Addresses-->
+<div class="saveadd" *ngIf="addresses.length > 0" >
+  <h3 style="color: aliceblue;">choose one address</h3>
+  
+  <!-- عرض العناوين كـ Radio -->
+  <div *ngFor="let address of addresses" class="viewaddress" >
+    <input 
+      
+      type="radio" 
+      name="selectedAddress" 
+      [value]="address._id" 
+      [(ngModel)]="selectedAddressId"
+      id="{{ address._id }}"
+    >
+    
+    <label [for]="address._id">
+      <strong>Home:</strong> {{ address.name }} <br>
+      <strong>Details:</strong> {{ address.details }} <br>
+      <strong>Phone:</strong> {{ address.phone }} <br>
+      <strong>City:</strong> {{ address.city }}
+    </label>
+
+    <!-- زر الحذف -->
+    <button  (click)="deleteAddress(address._id)">Delete</button> 
+  </div>
+
+  <!-- زر إنشاء الطلب -->
+  <button 
+  
+    [disabled]="!selectedAddressId"
+    routerLink="/cash"
+  >
+    Create Cash Order
+  </button>
+</div>
+
+<!--No addresses found-->
+<div *ngIf="addresses.length === 0" class="mt-5">
+  <p>No addresses found.</p>
+</div>
+
+<app-footer></app-footer>
+</div>

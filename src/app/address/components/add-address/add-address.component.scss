@@ -1,0 +1,62 @@
+.parent {
+        background-image: linear-gradient(to right,rgba(212, 136, 5, 0.833),white);
+
+}
+form {
+    border: 1px solid orange;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;    border-radius: 0 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 10px;
+    padding: 10px;
+    margin: 100px auto;
+    font-size: 20px;
+}
+input {
+    width: 50%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+
+
+
+}
+button {
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    padding: 7px 50px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s , background-color 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+    color: orange;
+}
+input:focus {
+    border: 2px solid orange;
+}
+input[type="radio"] {
+  transform: scale(1.5); /* 1.5 يعني أكبر بنسبة 50% */
+  accent-color: #007bff; /* لتغيير لون الدائرة (يدعم متصفحات حديثة) */
+  cursor: pointer;}
+
+.saveadd {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:5%;
+    font-size: 20px;
+}
+.create {
+    width:20%;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,17 @@
+<div class="parent">
+  <app-header></app-header>
+  <form (ngSubmit)="updateData()">
+  
+    <h1>Welcome Again</h1>
+
+  <input type="text" placeholder="Name" name="name" [(ngModel)]="name" required >
+  <input type="email" placeholder="Email"  name="email" [(ngModel)]="email" required>
+ 
+  <input type="text" placeholder="Phone"  name="phone" [(ngModel)]="phone"  required>
+
+  <button type="submit" routerLink="/allproducts">Update</button>
+  
+</form>
+<app-footer></app-footer>
+
+</div>

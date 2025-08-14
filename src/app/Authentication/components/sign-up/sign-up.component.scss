@@ -1,0 +1,60 @@
+.parent {
+    background-image: linear-gradient(to right,rgba(212, 136, 5, 0.767),white);
+
+}
+h1{ 
+    color: #ffffff;
+
+}
+ 
+
+form {
+    border: 1px solid orange;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;    border-radius: 0 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 10px;
+    padding: 10px;
+    margin: 100px auto;
+    font-size: 20px;
+
+
+}
+input {
+    width: 50%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+
+
+}
+button {
+    color: orange;
+    background-color: #ffffff;
+    border: none;
+    padding: 7px 50px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s , background-color 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    background-color: orange;
+}
+span {
+    color: #ffffff;
+}
+input:focus {
+    border: 2px solid orange;
+}
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}

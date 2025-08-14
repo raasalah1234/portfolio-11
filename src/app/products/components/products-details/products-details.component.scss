@@ -1,0 +1,28 @@
+.parent {
+             background-image: linear-gradient(to right,rgba(212, 136, 5, 0.833),white);
+             
+
+}
+.buy-wish {
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.buy-wish button {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+  transition: transform 0.3s , background-color 0.3s;
+}
+.buy-wish button:hover {
+    transform: scale(1.05);
+    color: orange;
+    background-color: #ffffff;
+}

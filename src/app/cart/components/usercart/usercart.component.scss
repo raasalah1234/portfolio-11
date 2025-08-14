@@ -1,0 +1,72 @@
+.parent {
+        background-image: linear-gradient(to right,rgba(212, 136, 5, 0.833),white);
+
+}
+.full {
+       width: 70%;
+    border: 1px solid orange;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;    
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+    padding: 20px;
+    align-items: center;
+    height: auto;
+    border-radius: 0 20px;
+    font-size: 20px;
+    margin: 100px auto;
+}
+.item {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+
+       
+}
+
+.choose {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.item button {
+    width: 30%;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+  transition: transform 0.3s , background-color 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+    color: orange;
+    background-color: #ffffff;
+}
+.item-details {
+    width: 20%;
+}
+.free{
+    border: 1px solid orange;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;    border-radius: 0 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 10px;
+    padding: 10px;
+    margin: 100px auto;
+    font-size: 20px;
+}
